@@ -1,0 +1,21 @@
+# ESP-IDF build outputs
+/build/
+*.bin
+*.elf
+*.map
+*.log
+
+# Local sdkconfig (không commit)
+sdkconfig
+sdkconfig.old
+
+# Ignore external libs
+components/u8g2/
+components/u8g2-hal-esp-idf/
+
+# VS Code config
+.vscode/
+
+# OS junk files
+.DS_Store
+Thumbs.db
