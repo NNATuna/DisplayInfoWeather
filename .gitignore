@@ -1,0 +1,21 @@
+# ESP-IDF build files
+/build/
+/sdkconfig.old
+
+# VSCode & Devcontainers
+.vscode/
+.devcontainer/
+
+# Temporary files
+*.log
+*.tmp
+
+# CMake / Ninja / Build cache
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Local secrets
+*.pem
+*.crt
+*.key

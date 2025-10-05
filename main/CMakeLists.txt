@@ -1,0 +1,23 @@
+idf_component_register(
+    SRCS
+        "src/main.c"
+        "src/http_client_app.c"
+        "src/http_server_app.c"
+        "src/oled_app.c"
+        "src/wifi_app.c"
+        "task/http_client_task.c"
+        "task/http_server_task.c"
+        "task/oled_task.c"
+        "task/wifi_task.c"
+    INCLUDE_DIRS
+        "inc"
+    PRIV_REQUIRES
+        esp_wifi
+        nvs_flash
+        esp_http_server
+        esp_http_client
+        json
+    REQUIRES
+        u8g2-hal-esp-idf
+        driver
+)
