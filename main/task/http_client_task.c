@@ -8,7 +8,7 @@
 
 void http_client_task(void *pvParameters)
 {
-    const TickType_t REFRESH_INTERVAL = pdMS_TO_TICKS(1000);
+    const TickType_t REFRESH_INTERVAL = pdMS_TO_TICKS(5 * 60 * 1000);
     EventBits_t bits = xEventGroupWaitBits(wifi_event_group,
                                            WIFI_GET_WEATHER_START_BIT,
                                            pdFALSE,
