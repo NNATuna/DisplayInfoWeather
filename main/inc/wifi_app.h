@@ -13,6 +13,7 @@
 #define WIFI_AP_STACONNECTED_BIT BIT8
 #define WIFI_GET_WEATHER_START_BIT BIT9
 #define WIFI_GET_SCAN_DONE_BIT BIT10
+#define WIFI_GET_WEATHER_CLK_BIT BIT11
 #define MAX_AP_SCAN 20
 
 extern EventGroupHandle_t wifi_event_group;
